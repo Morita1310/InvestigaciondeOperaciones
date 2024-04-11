@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath> // libreria para realizar las operaciones matematicas como la potencia
+
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Digite la cantidad de valores que quiere en la sumatoria : ";
+    cin >> n;
+    cout<<""<<endl;
+
+    cout<<"-----------------------------------------------------"<<endl;
+
+    int sumatoria = 0;
+
+    for (int i = 1; i <= n; i++) {
+        int termino = pow(i, 2);
+        cout << termino;
+        if (i < n) {
+            cout << " + ";
+        }
+        sumatoria += termino;
+    }
+
+    cout << " = " << sumatoria << endl;
+
+    return 0;
+}
